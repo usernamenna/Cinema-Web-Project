@@ -23,6 +23,30 @@ div.header {
     margin-bottom: 200px;
 }
 
+#navbar {
+    background-color: #c6bdbd;
+    overflow: hidden;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: #c69797;
+    color: white;
+}
+
 .header p {
     color: #930041;
     font-size: 30px;
