@@ -168,3 +168,10 @@ li
 {
     font:17px;
 }
+.logout{
+
+    position:fixed;
+    right:10px;
+    top:5px;
+    font-family: sans-serif;
+ }

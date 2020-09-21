@@ -36,3 +36,9 @@ function changeMode()
   let element = document.body;
   element.classList.toggle("dark-mode");
 }
+
+function welcomeUser()
+{
+  var username=document.getElementById("username").value;
+  alert("Welcome back, "+username + "!");
+}
