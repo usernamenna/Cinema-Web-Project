@@ -57,7 +57,7 @@ arrowRight.addEventListener('click', function () {
 })
 startSlide();
 
-//displaying the logout button
+/*displaying the logout button
 function loggingOut()
 {
     var element= document.getElementById("submit");
@@ -68,4 +68,4 @@ function loggingOut()
       else {
         element.style.display = 'block';
        }
-}
+}*/
