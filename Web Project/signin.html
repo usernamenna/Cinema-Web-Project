@@ -23,24 +23,6 @@
         </form>
         
     </div>
-    <script type="text/javascript" src="index.js">
-    
-password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
-
-function checkAdmin()
-{
-  var adminUsername= document.getElementById("username");
-  var adminPassword= document.getElementById("password");
-  var admin=false;
-  if(adminUsername.value=="admin" && adminPassword.value=="Admin123")
-  {
-    admin=true;
-  }
-  else {
-    admin=false;
-  }
-}
-</script>
+    <script type="text/javascript" src="sign.js"></script>
 </body>
 </html>

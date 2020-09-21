@@ -1,4 +1,4 @@
-
+//Sign up
 var password = document.getElementById("password2")
 , confirm_password = document.getElementById("password3");
 
@@ -10,6 +10,7 @@ function validatePassword(){
   }
 }
 
+//Admin page
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
 
@@ -28,3 +29,10 @@ function checkAdmin()
   }
 }
 
+
+function changeMode() 
+{
+
+  let element = document.body;
+  element.classList.toggle("dark-mode");
+}
