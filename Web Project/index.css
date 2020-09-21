@@ -222,8 +222,20 @@ div ul {
     list-style-type: none;
     font-size: 17px;
 }
-
-.footr {
-
+.footr 
+{
     background-color: rgb(26, 26, 26);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+li
+{
+    text-align: center;
+    justify-content: center;
+}
+.credit
+{
+    font:17px;
 }
