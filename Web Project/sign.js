@@ -41,32 +41,4 @@ function welcomeUser()
 {
   var username=document.getElementById("username").value;
   alert("Welcome back, "+username + "!");
-  window.location.href = 'index.html';
-  logged = true;
-  sessionStorage.setItem("logged", true);
-  var x = document.querySelectorAll(".log");
-  for(let i = 0;i < x.length; i++){
-      x[i].value = "Log Out";
-  }
 }
-var logged = false;
-sessionStorage.setItem("logged",false);
-function sign()
-{
-    var islogged = sessionStorage.getItem("logged");
-    logged = !
-    sessionStorage.setItem("logged", logged);
-}
-function change_btn()
-{
-    var text;
-    if(logged){
-        text="Log Out"
-    }
-    else
-    {
-        text="Log in"
-    }
-
-}
-change_btn();
