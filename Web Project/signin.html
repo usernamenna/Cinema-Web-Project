@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sign.css">
-    <link rel="stylesheet" href="index.css">
+    <title>Sign In</title>
 </head>
 <body>
     <header style="height: 100px;"></header>
     <div class="container" >
-        <form id="form" action="index.html">
+        <form id="form" action="index.html" onsubmit="welcomeUser()">
             <legend>Login</legend>
             <div>
                 <input type="text"  id="username" placeholder="Enter Username" required>
@@ -19,7 +19,7 @@
             </div>
             <div>
                 <a href="signup.html" style="font-size: small;">Don't have an account?</a>
-               <button onclick="welcomeUser()" id="signinbtn">Sign In</button>
+               <button onclick="checkAdmin()">Sign In</button>
             </div>
         </form>
         

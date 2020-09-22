@@ -11,38 +11,37 @@ function validatePassword(){
   }
 }
 
-//Admin page
 password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
+confirmPassword.onkeyup = validatePassword;
 
-function checkAdmin()
-{
-  var adminUsername= document.getElementById("username");
-  var adminPassword= document.getElementById("password");
-  var admin=false;
-  if(adminUsername.value=="admin" && adminPassword.value=="Admin123")
-  {
-    admin=true;
-    window.location.href="admin.html";
-  }
-  else {
-    admin=false;
-  }
-}
-function changeMode() 
-{
 
-  let element = document.body;
-  element.classList.toggle("dark-mode");
-}
-
-function welcomeUser()
-{
-  var username=document.getElementById("username").value;
-  alert("Welcome back, "+username + "!");
+function welcomeUser() {
+    var username = document.getElementById("username").value;
+    if (username == "") {
+        alert("Username must not be left empty");
+        return false;
+    }
+    alert("Welcome back, " + username + "!");
   logged = true;
   sessionStorage.setItem("logged",true);
 }
+
+function checkAdmin() {
+    var adminUsername = document.getElementById("username");
+    var adminPassword = document.getElementById("password");
+    if (adminUsername.value == "admin" && adminPassword.value == "Admin123") {
+        setTimeout(function() {window.location.href="admin.html"},0);
+    } 
+    welcomeUser();
+    }
+
+
+//Admin Page
+function changeMode() {
+
+   document.body.style.background='black';
+}
+
 /*
 function logSwap()
 {
