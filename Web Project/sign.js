@@ -1,4 +1,4 @@
-//Sign up
+//Sign up-confirming password
 var password = document.getElementById("password2"),
     confirmPassword = document.getElementById("password3");
 
@@ -33,11 +33,10 @@ function checkAdmin() {
     }
 
 
-
+//Admin Page
 function changeMode() {
 
-    let element = document.body;
-    element.classList.toggle("dark-mode");
+   document.body.style.background='black';
 }
 
 
