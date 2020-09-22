@@ -12,19 +12,15 @@ function validatePassword() {
 
 password.onchange = validatePassword;
 confirmPassword.onkeyup = validatePassword;
-/*
-//Admin page
+
 function checkAdmin() {
     var adminUsername = document.getElementById("username");
     var adminPassword = document.getElementById("password");
-    var admin = false;
     if (adminUsername.value == "admin" && adminPassword.value == "Admin123") {
-        admin = true;
-        window.location.href = "admin.html";
-    } else {
-        admin = false;
+        setTimeout(function() {window.location.href="admin.html"},0);
+    } 
     }
-}*/
+
 
 
 /*function changeMode() {
