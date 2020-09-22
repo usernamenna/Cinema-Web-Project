@@ -40,5 +40,6 @@ function changeMode()
 function welcomeUser()
 {
   var username=document.getElementById("username").value;
-  alert("Welcome back, "+username + "!");
+  if(username!=null){
+  alert("Welcome back, "+username + "!");}
 }
