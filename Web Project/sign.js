@@ -24,12 +24,13 @@ function welcomeUser() {
 }
 
 function checkAdmin() {
+    welcomeUser();
     var adminUsername = document.getElementById("username");
     var adminPassword = document.getElementById("password");
     if (adminUsername.value == "admin" && adminPassword.value == "Admin123") {
         setTimeout(function() {window.location.href="admin.html"},0);
     } 
-    welcomeUser();
+    
     }
 
 
