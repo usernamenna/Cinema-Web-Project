@@ -1,17 +1,17 @@
 //Sign up
 var password = document.getElementById("password2"),
-    confirm_password = document.getElementById("password3");
+    confirmPassword = document.getElementById("password3");
 
 function validatePassword() {
-    if (password.value != confirm_password.value) {
-        confirm_password.setCustomValidity("Passwords Don't Match");
+    if (password.value != confirmPassword.value) {
+        confirmPassword.setCustomValidity("Passwords Don't Match");
     } else {
-        confirm_password.setCustomValidity('');
+        confirmPassword.setCustomValidity('');
     }
 }
 
 password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
+confirmPassword.onkeyup = validatePassword;
 /*
 //Admin page
 function checkAdmin() {
