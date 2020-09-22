@@ -37,6 +37,7 @@ function welcomeUser() {
     var username = document.getElementById("username").value;
     if (username == "") {
         alert("Username must not be left empty");
+        return false;
     }
     alert("Welcome back, " + username + "!");
 }
