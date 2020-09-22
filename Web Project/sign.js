@@ -10,10 +10,10 @@ function validatePassword() {
     }
 }
 
-//Admin page
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
-
+/*
+//Admin page
 function checkAdmin() {
     var adminUsername = document.getElementById("username");
     var adminPassword = document.getElementById("password");
@@ -24,25 +24,16 @@ function checkAdmin() {
     } else {
         admin = false;
     }
-}
+}*/
 
 
-function changeMode() {
+/*function changeMode() {
 
     let element = document.body;
     element.classList.toggle("dark-mode");
-}
+}*/
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-function welcomeUser()
-{
-  var username=document.getElementById("username").value;
-  alert("Welcome back, "+username + "!");
-}
-=======
-=======
->>>>>>> 9b27c92ffb29ea71faf6f4470a433fd97acd9f6f
+
 function welcomeUser() {
     var username = document.getElementById("username").value;
     if (username == "") {
@@ -51,7 +42,4 @@ function welcomeUser() {
     }
     alert("Welcome back, " + username + "!");
 }
-<<<<<<< HEAD
->>>>>>> 9b27c92ffb29ea71faf6f4470a433fd97acd9f6f
-=======
->>>>>>> 9b27c92ffb29ea71faf6f4470a433fd97acd9f6f
+
